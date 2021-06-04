@@ -1,0 +1,24 @@
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+  
+  <input type="hidden" name="business" value="Shivanshtiwari695-facilitator@gmail.com">
+  
+  <input type="hidden" name="cmd" value="_xclick">
+ 
+ 
+  <input type="hidden" name="item_name" value="No Item Name">
+  <input type="hidden" name="item_number" value="no">
+  <input type="hidden" name="amount" value="20">
+  <input type="hidden" name="currency_code" value="USD">
+
+  <!-- Enable override of buyers's address stored with PayPal . -->
+  <input type="hidden" name="return" value="http://localhost:8015/myproject/success.php">
+  <!-- Set variables that override the address stored with PayPal. -->
+  <input type="hidden" name="cancel_return" value="http://localhost:8015/myproject/cancel.php"">
+  
+  <div align="center" style="margin-top:100px;">
+  <label>Secure Payment With paypal</label><br/>
+  <input type="image" name="submit" border="0"
+    src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
+    alt="PayPal - The safer, easier way to pay online">
+	</div>
+</form>
